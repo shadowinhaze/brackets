@@ -16,9 +16,5 @@ module.exports = function check(str, bracketsConfig) {
     str = str.replace(checkerApp, '')
   }
 
-  if (str.length === 0) {
-    return true
-  } else {
-    return false
-  };
+  return str.length === 0;
 }
