@@ -1,7 +1,5 @@
 module.exports = function check(str, bracketsConfig) {
-  let checker = [];
-
-  checker = bracketsConfig.map((item) => {
+  const checker = bracketsConfig.map((item) => {
     return item.reduce((sum, e) => {
       if (/\d/.test(e)) {
         return sum + e;
